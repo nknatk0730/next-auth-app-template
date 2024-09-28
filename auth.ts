@@ -10,7 +10,6 @@ export const config: NextAuthConfig = {
     clientId: process.env.AUTH_GITHUB_ID,
     clientSecret: process.env.AUTH_GITHUB_SECRET,
   })],
-  basePath: "/api/auth",
   callbacks: {
     authorized: ({ request, auth }) => {
       try {
